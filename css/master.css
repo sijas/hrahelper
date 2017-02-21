@@ -42,9 +42,26 @@ html, body {
     text-decoration: underline;
     font-style: italic;
 }
-
+.print{
+    position: fixed;
+    bottom: 20px;
+    right:100px;
+}
+.print a:link,.print a:visited{
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+    background: #BA3315;
+    padding: 10px 15px;
+}
 @media print {
     .break {
         page-break-after: always;
+    }
+    .print{
+        display: none;
+    }
+    .receipt{
+        float: left;
     }
 }

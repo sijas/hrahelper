@@ -1,3 +1,10 @@
+<?
+    if(!isset($_POST['ename'])){
+        header("location:./index.html");
+    }
+    extract($_POST);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,19 +19,19 @@ for($i=0;$i<12;$i++){
 ?>
 <div class="receipt">
     <div class="header">
-        <b>Hinduja Palm Groves</b><br/>
-        #16, 10<sup>th</sup> A Cross, 16<sup>th</sup> Main,<br/>
-        BTM Layout, 2<sup>nd</sup> Stage,<br/>
-        Mahadeshwara Nagar,<br/>
-        Bangalore - 560076<br/>
+        <b><?=$housename?></b><br/>
+        <?=$ad1?>,<br/>
+        <?=$ad2?>,<br/>
+        <?=$ad3?>,<br/>
+        <?=$ad4?>,<br/>
     </div>
     <div style="text-align: center;font-size: medium;text-decoration: underline;font-weight: bold">Rent Receipt</div>
     <div class="dateandreceiptno">
         <div class="date">Date: <span class="underline"><?=date("Y/m/d",$time)?></span></div>
         <div class="receiptno">Receipt no: <span class="underline"><?=$receipt?></span></div>
     </div>
-    Received from: <span class="underline">&nbsp;&nbsp;&nbsp;Mohammed Sijas&nbsp;&nbsp;&nbsp;</span> the amount of
-    &#x20b9;<span class="underline">&nbsp;&nbsp;&nbsp;8300&nbsp;&nbsp;&nbsp;</span><br/><br/>
+    Received from: <span class="underline">&nbsp;&nbsp;&nbsp;<?=$ename?>,&nbsp;&nbsp;&nbsp;</span> the amount of
+    &#x20b9;<span class="underline">&nbsp;&nbsp;&nbsp;<?=$amount?>,&nbsp;&nbsp;&nbsp;</span><br/><br/>
     Month <span class="underline">&nbsp;&nbsp;&nbsp;<?=date("F",$time)?>&nbsp;&nbsp;&nbsp;</span> Year <span class="underline">&nbsp;&nbsp;&nbsp;<?=date("Y",$time)?>&nbsp;&nbsp;&nbsp;</span>
 
     <div class="dateandreceiptno">
@@ -40,6 +47,9 @@ for($i=0;$i<12;$i++){
         echo "<div class='break'></div>";
     }
 } ?>
+<div class="print">
+    <a href="javascript:window.print()">Print Receipts</a>
+</div>
 </body>
 </body>
 </html>
