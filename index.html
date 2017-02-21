@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HRA Bill Helper</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+
+    <form class="form-signin" action="./generate.php" method="post">
+        <h2 class="form-signin-heading">Please Enter Details</h2>
+        <label for="HouseName" class="sr-only">House Name</label>
+        <input type="text" id="HouseName" class="form-control" placeholder="House Name" required autofocus name=""/>
+        <label for="add11" class="sr-only">Address line 1</label>
+        <input type="text" id="add11" class="form-control" placeholder="Address Line 1" required/>
+        <label for="add12" class="sr-only">Address line 2</label>
+        <input type="text" id="add12" class="form-control" placeholder="Address Line 2" required/>
+        <label for="add13" class="sr-only">Address line 3</label>
+        <input type="text" id="add13" class="form-control" placeholder="Address Line 3" required/>
+        <label for="add14" class="sr-only">Address line 4</label>
+        <input type="text" id="add14" class="form-control" placeholder="Address Line 4" required/>
+        <label for="empName" class="sr-only">Employee Name</label>
+        <input type="text" id="empName" class="form-control" placeholder="Employee Name" required/>
+        <label for="amount" class="sr-only">Amount</label>
+        <input type="number" id="amount" class="form-control" placeholder="Amount" required/>
+
+        <div class="checkbox">
+
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Generate Bills</button>
+    </form>
+
+</div>
+<!-- /container -->
+</body>
+</html>
