@@ -31,11 +31,11 @@ for($i=0;$i<12;$i++){
         <div class="receiptno">Receipt no: <span class="underline"><?=$receipt?></span></div>
     </div>
     Received from: <span class="underline">&nbsp;&nbsp;&nbsp;<?=$ename?>,&nbsp;&nbsp;&nbsp;</span> the amount of
-    &#x20b9;<span class="underline">&nbsp;&nbsp;&nbsp;<?=$amount?>,&nbsp;&nbsp;&nbsp;</span><br/><br/>
+    &#x20b9;<span class="underline">&nbsp;&nbsp;&nbsp;<?=$amount?>&nbsp;&nbsp;&nbsp;</span><br/><br/>
     Month <span class="underline">&nbsp;&nbsp;&nbsp;<?=date("F",$time)?>&nbsp;&nbsp;&nbsp;</span> Year <span class="underline">&nbsp;&nbsp;&nbsp;<?=date("Y",$time)?>&nbsp;&nbsp;&nbsp;</span>
 
     <div class="dateandreceiptno">
-        <div class="receiptno">Received by: <span class="underline">Shantha moorthy</span>
+        <div class="receiptno">Received by: <span class="underline"><?=$landlord?></span>
         </div>
     </div>
 </div>
