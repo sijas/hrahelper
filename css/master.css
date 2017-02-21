@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+}
+
+.receipt {
+    width: 500px;
+    border: 1px dashed #BABABA;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.receipt .header {
+    margin: 0 auto;
+    text-align: center;
+    font-size: x-small;
+}
+
+.receipt .header b {
+    font-size: small;
+}
+
+.dateandreceiptno {
+    position: relative;
+    height: 30px;
+}
+
+.dateandreceiptno .date {
+    position: absolute;
+    left: 0;
+}
+
+.dateandreceiptno .receiptno {
+    position: absolute;
+    right: 0;
+}
+
+.nofloat {
+    clear: both;
+}
+
+.underline {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+@media print {
+    .break {
+        page-break-after: always;
+    }
+}
