@@ -1,8 +1,8 @@
 <?
-    if(!isset($_REQUEST['ename'])){
-        header("location:./index.html");
+    if(!isset($_POST['ename'])){
+        header("location:./index.php");
     }
-    extract($_REQUEST);
+    extract($_POST);
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
 </head>
 <body>
 <?
-$time = mktime(0,0,0,4,5,2016);
+$time = mktime(0,0,0,4,5,$year);
 for($i=0;$i<12;$i++){
 ?>
 <div class="receipt">
@@ -45,7 +45,7 @@ for($i=0;$i<12;$i++){
 } ?>
 <div class="print">
     <p>Please get the receipts signed from <?=$landlord?> before submitting.</p>
-    <a href="javascript:window.print()">Print Receipts</a>
+    <a href="javascript:window.print()">Print all Receipts</a>
 </div>
 </body>
 </body>
