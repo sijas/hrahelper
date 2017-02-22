@@ -44,6 +44,7 @@ for($i=0;$i<12;$i++){
     }
 } ?>
 <div class="print">
+    <p>Please get the receipts signed from <?=$landlord?> before submitting.</p>
     <a href="javascript:window.print()">Print Receipts</a>
 </div>
 </body>
