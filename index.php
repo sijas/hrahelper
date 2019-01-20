@@ -64,8 +64,8 @@
             <label for="year" class="sr-only">Amount</label>
             <select type="number" id="year" class="form-control" placeholder="Amount" name="year">
                 <?
-                    $now = time();
-                    for($i=date("Y",$now);$i>2014;$i--)
+                $now = time();
+                for ($i = date("Y", $now); $i > 2014; $i--)
                     echo "<option value='$i'>$i</option>";
                 ?>
             </select>
@@ -75,15 +75,22 @@
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Generate Bills</button>
     </form>
+
+    <h6 class="badge badge-primary">
+        Disclaimer: No Information entered are saved in any databases. It is used only to generate the bills and will be
+        lost on refresh.
+    </h6>
     <div class="donate">
+
+        <a href="https://github.com/sijas/hrahelper" target="_blank">
+            <img src="./img/github-banner.png" alt="Find on Github" style="width: 200px;"/>
+        </a>
+        <br/>
         <a href="https://paypal.me/sijas" target="_blank">
             <img src="./img/donate.png"/>
         </a>
+
     </div>
-    <br/>
-    <h6 class="badge badge-primary">
-        Disclaimer: No Information entered are saved in any databases. It is used only to generate the bills and will be lost on refresh.
-    </h6>
 </div>
 <!-- /container -->
 </body>
