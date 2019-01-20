@@ -57,6 +57,17 @@ html, body {
     background: #BA3315;
     padding: 10px 15px;
 }
+.donate{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.donate img{
+    width: 100px;
+}
+.donate a{
+    background: transparent !important;
+}
 @media print {
     .break {
         page-break-after: always;

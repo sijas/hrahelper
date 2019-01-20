@@ -44,6 +44,11 @@ for($i=0;$i<12;$i++){
     }
 } ?>
 <div class="print">
+    <div class="donate">
+        <a href="https://paypal.me/sijas" target="_blank">
+            <img src="./img/donate.png"/>
+        </a>
+    </div>
     <p>Please get the receipts signed from <?=$landlord?> before submitting.</p>
     <a href="javascript:window.print()">Print all Receipts</a>
 </div>
