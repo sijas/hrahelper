@@ -76,7 +76,7 @@
         <button class="btn btn-lg btn-primary btn-block" type="submit">Generate Bills</button>
     </form>
 
-    <h6 class="badge badge-primary">
+    <h6 class="disclaimer">
         Disclaimer: No Information entered are saved in any databases. It is used only to generate the bills and will be
         lost on refresh.
     </h6>
