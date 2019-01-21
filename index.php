@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>HRA Bill Helper</title>
+    <meta name="description" content="Free HRA Bill Generator | Free Bill Generator | House Rent Allowance | Generate your House Rent Receipt templates online for multiple rent periods for FREE. Use Rent receipt tool to print and submit generated slips to HR/Payroll to claim HRA benefits.">
+    <meta name="author" content="Mohammed Sijas">
+    <meta name="keywords" content="rent receipt, rent receipt template,rent receipt pdf, generate rent receipt, Rent Receipt for HRA, Online Rent Receipt">
+    <title>Free HRA Bill Generator | Free Bill Generator | House Rent Allowance</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
